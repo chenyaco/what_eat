@@ -42,7 +42,7 @@ const { districts, selectAll, moveTo, clearSelect, selected, getData }  = store;
 	// 選擇區域
 	.flex.items-center.flex-wrap
 		label.text-lg(v-for="(item, index)  in districts", :for='item.name', class="md:p-4 768:py-2 px-4")
-			input.mr-1(:id="item.en" type='checkbox' :value='item.name' v-model='selected.item')
+			input.mr-1(:id="item.name" type='checkbox' :value='item.name' v-model='selected.item')
 			| {{ item.name }} 
 
 

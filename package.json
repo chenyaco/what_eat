@@ -1,0 +1,32 @@
+{
+  "name": "what_eat",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/postcss7-compat": "2.2.17",
+    "firebase": "^9.18.0",
+    "pinia": "^2.0.33",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.2.17",
+    "vite-plugin-pug": "^0.3.2",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.1",
+    "tailwindcss": "^2.2.16",
+    "unplugin-auto-import": "^0.15.1",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.1.4"
+  }
+}

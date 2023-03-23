@@ -1,0 +1,103 @@
+
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+[v-cloak] {
+  @apply hidden opacity-0 transition-opacity duration-500;
+}
+
+body {
+  @apply tracking-wider ;
+  color: #595858;
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "微軟正黑體", "Microsoft JhengHei" !important ;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.max-w-1200 {
+  max-width: 1200px;
+}
+
+.tracking-title {
+  letter-spacing: .75rem;
+}
+
+.transition-5s{
+  @apply transition duration-500 transform;
+}
+
+.-scale-x{
+  transform: scaleX(-1);
+}
+
+
+.cover-4\/3, .cover-16\/9 {
+  @apply w-full h-0 bg-center bg-cover;
+}
+
+.cover-4\/3 {
+  padding-bottom: 75%;
+}
+.cover-16\/9 {
+  padding-bottom: 56.25%;
+}
+
+
+/* input */
+.input {
+  @apply appearance-none mb-2 px-4 leading-9 w-full h-9 bg-white rounded-3xl outline-none text-lg ;
+}
+.input:focus {
+  @apply ring-2 ring-main ring-opacity-20;
+}
+.helper {
+  @apply -mt-1 mb-2 pl-4 text-xs ;
+}
+input:focus, textarea:focus{
+  outline: none; 
+}
+
+/* vue transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+/* 進場效果 */
+.animation {
+  @apply transform-gpu transition duration-1000;
+}
+.animation.hide {
+  @apply translate-y-10 opacity-0;
+}
+@media screen and (max-width: 768px) {
+  .animation.delay-100,
+  .animation.delay-200,
+  .animation.delay-300 {
+    transition-delay: 0s;
+  }
+}
+
+/* 花紋背景圖 */
+.bg-texture{
+  background-image:url('../img/bg-texture.png');
+  background-repeat: repeat
+}
+
+@media screen and (min-width: 1024px){
+  .card-tab{
+    @apply text-2xl px-8 py-14 bg-white border-l-6
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .card-tab{
+    @apply text-xl m-2 py-2 px-4 bg-mainLight border-2 border-main rounded-2xl text-white 
+  }
+}

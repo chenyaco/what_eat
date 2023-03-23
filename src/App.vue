@@ -12,8 +12,10 @@ onMounted( async () => {
 
 <template lang="pug">
 #index.max-w-1200.mx-auto(class="768:px-4")
-	h1 What Eat?
+	
 	.max-w-3xl.mx-auto.mt-20
+		h1.font-bold.text-2xl.py-4 What Eat?
+
 		//- 選擇區域
 		District
 

@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import { defineStore } from "pinia";
 import { ref, reactive, computed, toRefs } from 'vue';
 import { getDatabase, firebaseRef, set, child, get }  from '@/library/_firebase'
@@ -80,12 +81,14 @@ export const useStore = defineStore("main", ()=> {
       addr: addr,
     }).then( () =>{
       //清空資料
-      additem = {
-        name: null,
+      Object.assign(additem, { // cutImg 清空
+        name : null,
         addr: null,
-      };
+      })
+      Swal.fire('資料送出成功');
     });
   }
+
 
   // 取firebase的Realtime Database資料庫中shops/的資料
   const getData = async ()=> {

@@ -85,7 +85,10 @@ export const useStore = defineStore("main", ()=> {
         name : null,
         addr: null,
       })
-      Swal.fire('資料送出成功');
+      Swal.fire({
+        title: '資料送出成功',
+        confirmButtonColor: '#000000',
+      });
     });
   }
 

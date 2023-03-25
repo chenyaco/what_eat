@@ -7,8 +7,6 @@ const { getData }  = store;
 onMounted( async () => {
 	// 取firebase的Realtime Database資料庫中shops/的資料
   await getData();
-	
-	
 })
 </script>
 
@@ -17,8 +15,6 @@ onMounted( async () => {
 	
 	.max-w-3xl.mx-auto.mt-20
 		h1.font-bold.text-2xl.py-4 What Eat?
-
-		button(@click='showAlert') AlertBtn
 
 		//- 選擇區域
 		District

@@ -103,6 +103,14 @@ export const useStore = defineStore("main", ()=> {
     })
   }
 
+  
+
+  // const deletData = async (key)=> {
+  //   console.log('deletData--->',key);
+  //   const db = getFirestore();
+  //   await deleteDoc(doc(db, 'shops/', key));
+  // }
+
   // 拉霸名單
   const playList =  computed(()=>{
     playArry,shopArry = []; //清空資料
@@ -156,6 +164,7 @@ export const useStore = defineStore("main", ()=> {
   
 
   return { districts, selected, addTrigger, shopTrigger, selectText, additem,
-     shopList, selectAll, clearSelect, moveTo, sendData, getData, playList, playTrigger, playStart, playAgain, playResult }
+     shopList, selectAll, clearSelect, moveTo, sendData, getData, playList,
+      playTrigger, playStart, playAgain, playResult }
 	
 });
